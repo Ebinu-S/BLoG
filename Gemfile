@@ -8,7 +8,7 @@ group :development do
   gem 'sqlite3', git: 'https://github.com/larskanis/sqlite3-ruby', branch: 'add-gemspec'
 end
 
-group :deployment do
+group :production  do
   gem 'pg'
   gem 'rails_12factor'
 end

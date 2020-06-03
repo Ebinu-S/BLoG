@@ -3,11 +3,7 @@
     <% @posts.each do |post| %>
       <tr>
        <h2> <%= link_to post.title, post %> </h2>
+       <p align="right">Poster <%= time_ago_in_words(post.created_at) %>ago </p><hr>
     <% end %>
 
 <br>
-<% if user_signed_in? %>
-<%= link_to 'New Post', new_post_path %>
-<%else%>
-<%= link_to "Log In", new_user_session_path %>
-<%end%>

@@ -9,14 +9,14 @@
 <body>
 <nav class="navbar navbar-inverse">
 <%= link_to "<BLog>", root_path, class:'navbar-brand' %>
-<div class="container">
-  <p class="navbar-text navbar-right">
-  <% if user_signed_in? %>
-  <%= link_to "New Post", new_post_path %>
-  <% else%>
-  <%= link_to "Log In", new_user_session%>
-  <%end%>
-  </p>
+<div class="container ">
+  <p class="navbar-right navbar-text">
+    <% if user_signed_in? %>
+    <%= link_to "New Post", new_post_path , class: 'navbar-link '%>
+    <% else%>
+    <%= link_to "Log In", new_user_session, class: 'navbar-link' %>
+    <%end%>
+    </p>
 </div>
 
 </nav>

@@ -23,5 +23,13 @@
 <div class="col-md-10 col-md-offset-1">
 <%= yield %>
 </div>
+<div>
+<% if user_signed_in? %>
+<% else%>
+<h4>contact</h4>
+<%= link_to 'github'.html_safe, "https://github.com/Ebinu-S", :target => "_blank" %>
+<%= link_to 'instagram'.html_safe, "https://www.instagram.com/dr.retr0_o/", :target => "_blank" %>
+<%end%>
+</div>
 </body>
 </html>

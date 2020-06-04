@@ -42,4 +42,28 @@
 }
 
 body{
-    font-size: 1.5em;}
+    font-size: 1.5em;
+    background: #BCB8B1;
+}
+
+a:hover {
+    text-decoration:none;
+}
+.cc{
+    background: #fff;
+    padding: 20px 10px 20px;
+    border-radius: 10px;
+    margin: 2px 0 3px; 
+}
+
+.ttl a{
+    color: #E63946;
+}
+
+.ttl a:hover{
+    color: #E4B363;
+}
+
+.navbar-text{
+    font-size: 1.5em;
+}

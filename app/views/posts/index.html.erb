@@ -2,14 +2,13 @@
 
   <% if user_signed_in? %>
     <% @posts.reverse_each do |post| %>
-      <tr>
-      <div class="CC">
-       <h2> <%= link_to post.title, post %> </h2>
+      <div class="cc">
+       <center> <h2 class="ttl"> <%= link_to post.title, post %> </h2>
        <% if post.image.exists? %>
        <%= image_tag post.image.url(:medium) %>
        <%end%> 
        <p> <%=  post.body %> </p>
-       <p align="right">Posted <%= time_ago_in_words(post.created_at) %>ago </p><hr>
+       <p align="right">Posted <%= time_ago_in_words(post.created_at) %>ago </p> </center>
        </div>
     <% end %>
     <%= link_to "Delete all", home_trash_em_all_path, class: 'btn btn-default', data: { confirm: "Are you sure you want to delete all posts? "}%>

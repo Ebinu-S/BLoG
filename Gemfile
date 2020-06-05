@@ -57,3 +57,4 @@ gem 'devise'
 gem 'social-share-button'
 gem 'bootstrap-sass', '3.3.6'
 gem "paperclip", "~> 6.0.0"
+gem 'puma'

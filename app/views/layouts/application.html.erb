@@ -4,6 +4,7 @@
   <title>BlogYt</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -27,8 +28,10 @@
 <% if user_signed_in? %>
 <% else%>
 <h3>contact</h3>
-<%= link_to 'github'.html_safe, "https://github.com/Ebinu-S", :target => "_blank", class: 'sl' %>
-<%= link_to 'instagram'.html_safe, "https://www.instagram.com/dr.retr0_o/", :target => "_blank",class: 'sl' %>
+<div class="cbox">
+<%= link_to '<i style="font-size:24px" class="fa">&#xf09b;</i>'.html_safe, "https://github.com/Ebinu-S", :target => "_blank", class: 'sl' %>
+<%= link_to '<i style="font-size:24px" class="fa">&#xf16d;</i>'.html_safe, "https://www.instagram.com/dr.retr0_o/", :target => "_blank",class: 'sl' %>
+</div>
 <%end%>
 </div>
 </body>

@@ -8,6 +8,7 @@
        <%= image_tag post.image.url(:high) %>
        <%end%> 
        <p class="desc"> <%=  post.body %> </p>
+      <%= link_to "Delete", post, method: :delete, data:{ confirm: "are you sure"}, class: 'btnD ' %>
        <p align="right">Posted <%= time_ago_in_words(post.created_at) %>ago </p> </center>
        </div>
     <% end %>
